@@ -32,6 +32,10 @@ exports.getCart = (req, res, next) => {
     pageTitle: 'Your Cart'
   });
 };
+exports.postCard = (req, res, next) => {
+  
+  res.redirect("/cart")
+};
 
 exports.getOrders = (req, res, next) => {
   res.render('shop/orders', {

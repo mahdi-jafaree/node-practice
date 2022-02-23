@@ -25,9 +25,6 @@ module.exports = class Product {
         this.price = price;
     }
 
-
-
-        
     save() {
         getProductsFromFile(products => {
             products.push(this);
